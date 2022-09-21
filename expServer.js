@@ -9,7 +9,9 @@ const data = {
 }
 const jasonData = JSON.stringify(data);
 app.get('/', (req, res) => {
-    res.send(`<h1>Assignment 2</h1>`)
+    res.send(`<h1>Assignment 2</h1>
+    <p>Go to /api route to see html data </p>
+    <p>Go to /main route to see json data </p>`)
 })
 app.get('/api', (req, res) => {
     res.write(`<h1>#What is express js? </h1>
